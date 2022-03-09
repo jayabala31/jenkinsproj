@@ -16,5 +16,10 @@ pipeline {
                 echo "This is Deploy stage of declarative pipeline" 
             }
         }
+        stage('UniTest') { 
+            steps {
+                echo "This is Unit Test stage of declarative pipeline" 
+            }
+        }
     }
 }
