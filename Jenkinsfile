@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage('Description') { 
+            steps {
+                echo "This is auto deploy webhook of declarative pipeline"
+            }
+        }
         stage('Build') { 
             steps {
                 echo "This is build stage of declarative pipeline"
